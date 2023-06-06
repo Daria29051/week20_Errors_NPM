@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.total-container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.input-container, .output-container{
+    margin-left: 100px;
+}
+
+.input-container__content-input {
+    width: 250px;
+    height: 50px;
+}
+
+#button {
+    background-color: pink;
+    border: none;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+}
+
+
+/* вывод */
+
+
+.output-container {
+    font-weight: 600;
+    font-size: 2em;
+}
+
+.error {
+    font-weight: 200;
+    font-size: 1em;
+}

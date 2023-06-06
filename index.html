@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="total-container">
+<div class="input-container">
+    <h1>Кого или что будем искать?</h1>
+
+      <!-- БЛОК ВВОДА -->
+    <div class="input-container__content">
+    <select class="input-container__content-input" name="feature" id="feature-input">
+        <option value="people">Людей</option>
+        <option value="films">Фильмы</option>
+        <option value="planets">Планеты</option>
+        <option value="species">Виды</option>
+        <option value="starships">Космические корабли</option>
+        <option value="vehicles">Транспортные средства</option>
+        
+      </select>
+
+      <input class="input-container__content-input" id="number-input" type="number" min="1" max="10" placeholder="Введите номер">
+
+      <button id="button">Вперёд!</button>
+    </div>
+    </div>
+
+    <!-- БЛОК ВЫВОДА -->
+    <div class="output-container">
+
+    </div>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
