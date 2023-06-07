@@ -19,9 +19,8 @@ function showData() {
     if (data.detail ==='Not found' || numberInput.value==='') {
         outputContainer.classList.add('error');
         Promise.reject(data);
-       throw new Error('404');
-       
-        };
+        throw new Error('404');
+};
     outputContainer.classList.remove('error');
 
     if(featureInput.value ==='films') { 
@@ -34,10 +33,8 @@ function showData() {
 
 .catch(err=> {
 outputContainer.innerHTML = `Возникла ошибка: ${err.message}`;
-console.log(`Возникла ошибка: ${err.message}`);
-    
+console.log(`Возникла ошибка: ${err.message}`);  
 }
-
 )
 }
 
