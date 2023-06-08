@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+html, body {
+    overflow-x: hidden;  
+    overflow-y: hidden;  
+}
+
+
+.container {
+    display: grid;
+    margin: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto 280px;
+    grid-area: auto;
+    grid-template-areas:
+    "chart1 chart1 chart2 chart2"
+    "chart1 chart1 chart2 chart2"
+    "chart3 chart3 chart3 chart3"
+   ;
+}
+
+.container1, .container2,.container3 {
+    border: 1px solid black;
+    max-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container1 {
+    grid-area: chart1;
+}
+.container2 {
+    grid-area: chart2;
+}
+
+.container3 {
+    grid-area: chart3;
+}
+
+.container1__chart, .container2_chart, .container3__chart {
+    max-height: 90%;
+}
