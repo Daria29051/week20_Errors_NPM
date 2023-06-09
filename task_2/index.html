@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,7 +21,7 @@
     <!-- график2 -->
     <div class="container2">
         <h3 class="container2__title">Number of students per faculty</h3>
-        <canvas class="container2__chart" width="100" height="100"  ></canvas>
+        <canvas class="container2__chart" width="100" height="50"  ></canvas>
      </div>
 
     <!-- график3 -->
@@ -29,8 +30,23 @@
         <canvas class="container3__chart" width="200" height="200"  ></canvas>
      </div>
      
-</div>
+     <!-- график4 -->
+     <div class="container4">
+        <h3 class="container4__title">Male/Female division(%)</h3>
+       <div class="container4__chart ct-series-a ct-bar"></div>
+     </div>
+
+     <!-- график5 -->
+     <div class="container5">
+        <h3 class="container5__title">Alumni average salary($ per month)</h3>
+     <div class="container5__chart" id="myChart"></div>
+    </div>
+
+
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
